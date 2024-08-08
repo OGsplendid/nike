@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <header className='py-8 absolute z-10 w-full max-container px-4 md:px-8 lg:px-16'>
       <nav className='flex justify-between items-center'>
-        <NavLink to="/">
+        <NavLink to="/nike">
           <img
             src={headerLogo}
             alt="Nike"
@@ -23,7 +23,7 @@ const Nav = () => {
           {navLinks.map((link) => (
             <li key={link.label}>
               <NavLink
-                to={`/${link.href}`}
+                to={`nike/${link.href}`}
                 className='font-montserrat leading-normal text-lg text-slate-gray
                 hover:text-coral-red hover:transition-all'
               >
